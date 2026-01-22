@@ -1,6 +1,6 @@
 # requirement
 ```
-pip install triton transformers
+pip install triton transformers==4.57.3
 ```
 
 # deepseek-v3.2-mxfp4-quant
