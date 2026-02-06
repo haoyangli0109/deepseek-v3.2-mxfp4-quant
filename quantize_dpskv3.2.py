@@ -294,7 +294,7 @@ def main(input_path, output_path, quant_scheme):
                         w_res, scale, _ = quantizer.real_quantize(bf_weight)
                         # clear model.safetensors.index.json
                         if scale_inv_name in weight_map:
-                            which_safe_file = weight_map[scale_inv_name]
+                            which_safe_file = weight_map[weight_name]
                             weight_map.pop(scale_inv_name)
                             weight_map[scale_name] = which_safe_file
                         # add new k-v
